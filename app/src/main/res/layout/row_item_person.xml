@@ -1,0 +1,51 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPerson"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txtFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jay"
+            android:layout_toEndOf="@+id/imgPerson"
+            android:theme="@style/personName"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/txtLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parmar"
+            android:layout_toEndOf="@+id/txtFirstName"
+            android:theme="@style/personName"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test@gmail.com"
+            android:layout_toEndOf="@+id/imgPerson"
+            android:layout_below="@+id/txtFirstName"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
